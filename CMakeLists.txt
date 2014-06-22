@@ -34,7 +34,7 @@ CPM_ForceOnlyOneModuleVersion()
 # ++ EXTERNAL-MODULE: Google Test
 CPM_AddModule("google_test"
   GIT_REPOSITORY "https://github.com/CIBC-Internal/cpm-google-test"
-  GIT_TAG "1.0.2"
+  GIT_TAG "origin/master"
   EXPORT_MODULE TRUE
   USE_EXISTING_VER TRUE)
 
@@ -48,24 +48,24 @@ CPM_AddModule("spire"
 # ++ MODULE: GL Platform
 CPM_AddModule("gl_platform"
   GIT_REPOSITORY "https://github.com/CIBC-Internal/cpm-gl-platform.git"
-  GIT_TAG "1.3.5"
+  GIT_TAG "origin/master"
   EXPORT_MODULE TRUE
   USE_EXISTING_VER TRUE)
 
 # ++ MODULE: GL Batch Context
 CPM_AddModule("gl_batch_context"
   GIT_REPOSITORY "https://github.com/CIBC-Internal/cpm-gl-batch-context.git"
-  GIT_TAG "1.2.3")
+  GIT_TAG "origin/master")
 
 # ++ MODULE: GL State
 CPM_AddModule("gl_state"
   GIT_REPOSITORY "https://github.com/CIBC-Internal/cpm-gl-state.git"
-  GIT_TAG "1.0.1")
+  GIT_TAG "origin/master")
 
 # ++ EXTERNAL-MODULE: Lodepng
 CPM_AddModule("lodepng"
   GIT_REPOSITORY "https://github.com/CIBC-Internal/cpm-lodepng.git"
-  GIT_TAG "1.0.1")
+  GIT_TAG "origin/master")
 
 CPM_InitModule(${CPM_MODULE_NAME})
 
