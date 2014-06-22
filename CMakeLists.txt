@@ -18,7 +18,7 @@ else()
   endif()
   if (NOT EXISTS ${CPM_DIR}/CPM.cmake)
     execute_process(
-      COMMAND "${GIT_EXECUTABLE}" clone https://github.com/iauns/cpm ${CPM_DIR}
+      COMMAND "${GIT_EXECUTABLE}" clone https://github.com/CIBC-Internal/cpm ${CPM_DIR}
       RESULT_VARIABLE error_code
       OUTPUT_VARIABLE head_sha)
     if(error_code)
@@ -33,38 +33,38 @@ CPM_ForceOnlyOneModuleVersion()
 
 # ++ EXTERNAL-MODULE: Google Test
 CPM_AddModule("google_test"
-  GIT_REPOSITORY "https://github.com/iauns/cpm-google-test"
+  GIT_REPOSITORY "https://github.com/CIBC-Internal/cpm-google-test"
   GIT_TAG "1.0.2"
   EXPORT_MODULE TRUE
   USE_EXISTING_VER TRUE)
 
 # ++ MODULE: Spire
 CPM_AddModule("spire"
-  GIT_REPOSITORY "https://github.com/SCIInstitute/spire"
+  GIT_REPOSITORY "https://github.com/CIBC-Internal/spire"
   GIT_TAG "origin/master"
   EXPORT_MODULE TRUE
   USE_EXISTING_VER TRUE)
 
 # ++ MODULE: GL Platform
 CPM_AddModule("gl_platform"
-  GIT_REPOSITORY "https://github.com/iauns/cpm-gl-platform.git"
+  GIT_REPOSITORY "https://github.com/CIBC-Internal/cpm-gl-platform.git"
   GIT_TAG "1.3.5"
   EXPORT_MODULE TRUE
   USE_EXISTING_VER TRUE)
 
 # ++ MODULE: GL Batch Context
 CPM_AddModule("gl_batch_context"
-  GIT_REPOSITORY "https://github.com/iauns/cpm-gl-batch-context.git"
+  GIT_REPOSITORY "https://github.com/CIBC-Internal/cpm-gl-batch-context.git"
   GIT_TAG "1.2.3")
 
 # ++ MODULE: GL State
 CPM_AddModule("gl_state"
-  GIT_REPOSITORY "https://github.com/iauns/cpm-gl-state.git"
+  GIT_REPOSITORY "https://github.com/CIBC-Internal/cpm-gl-state.git"
   GIT_TAG "1.0.1")
 
 # ++ EXTERNAL-MODULE: Lodepng
 CPM_AddModule("lodepng"
-  GIT_REPOSITORY "https://github.com/iauns/cpm-lodepng.git"
+  GIT_REPOSITORY "https://github.com/CIBC-Internal/cpm-lodepng.git"
   GIT_TAG "1.0.1")
 
 CPM_InitModule(${CPM_MODULE_NAME})
